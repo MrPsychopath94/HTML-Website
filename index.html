@@ -6,27 +6,97 @@
     <title>Meine Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    body {
+      background: linear-gradient(to right, #000000, #ff0000, orange);
+    }
+</style>
+
+<style>
+    h1{
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+    }
+
+    h2{
+        color: rgb(255, 255, 255)
+        
+    }
+
+    th{
+        color:rgb(255, 255, 255)
+    }
+
+    td{
+        color:rgb(255, 255, 255)
+    }
+
+    li{
+        color:rgb(255, 255, 255)
+    }
+
+    a{
+        color:rgb(21, 255, 0)
+    }
+
+    p{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+
+    label{
+        color:rgb(255, 255, 255)
+    }
+
+    input{
+        color:rgb(0, 0, 0)
+    }
+
+    legend{
+        color:rgb(255, 255, 255)
+    }
+</style>
+
 <body>
     <header>
         <h1>Marc Ehrlich</h1>
     
     </header>
+
+    <table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Alter</th>
+            <th>Stadt</th>
+            <th>Bundesland</th>
+        </tr>
+        <tr>
+            <td>Marc</td>
+            <td>Ehrlich</td>
+            <td>29</td>
+            <td>Weyhe</td>
+            <td>Niedersachsen</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>Ehrlich</td>
+            <td>26</td>
+            <td>Weyhe</td>
+            <td>Niedersachsen</td>
+        </tr>
+        <tr>
+            <td>Zoe</td>
+            <td>Ehrlich</td>
+            <td>3</td>
+            <td>Weyhe</td>
+            <td>Niedersachsen</td>
+        </tr>
+     
+
     
 
-    <header>
-        <h2>Persönliche Daten:</h2>
-    </header>
-
-    <section>
-        <p>Name: Marc Ehrlich</p>
-        <p>Alter: 29</p>
-        <p>Wohnort: Weyhe</p>
-        <p>Bundesland: Niedersachsen</p>
-        <p>E-Mail: marc.ehrlich@edu.techstarter.de</p>
-    </section> 
-
-    
-    </section>
 
     <header>
         <h2>Lieblingsgerichte:</h2>
@@ -53,12 +123,82 @@
     <a href="https://de.wikipedia.org/wiki/The_Expendables" target="blank">Klick mich</a>
     <a href="https://de.wikipedia.org/wiki/Blind_Side_%E2%80%93_Die_gro%C3%9Fe_Chance" target="blank">Klick mich</a>
 
-    <main>
-       
+    <form>
+        <fieldset>
+          <legend>Personal Information:</legend>
+          <label for="firstname">Vorname:</label>
+          <input id="firstname" type="text" placeholder="Max" />
+          <br />
+          <br />
+          <label for="lastname">Nachname:</label>
+          <input id="lastname" type="text" placeholder="Mustermann" />
+          <br />
+          <br />
+          <label for="email">E-Mail:</label>
+          <input id="email" type="email" placeholder="Max.Mustermann@gmail.com" />
+          <br />
+          <br />
+          <label for="password">Passwort:</label>
+          <input id="password" type="password"  size="40" placeholder="Passwort" required/>
+          <br />
+          <br />
+          <label>Datum</label>
+          <input type="date" />
+          <br />
+          <br />
+          <label>Magst du Pizza?</label>
+          <br />
+          <br />
+          <label>ja</label>
+          <input name="pizza" type="radio" />
+          <label>nein</label>
+          <input name="pizza" type="radio" />
+          <br />
+          <br />
+          <label>Hobbies:</label><br />
+          <label for="basketball">Basketball spielen</label>
+          <input id="basketball" type="checkbox" value="Basketball spielen" />
+          <label for="fahrrad">Fahrrad fahren</label>
+          <input id="fahrrad" type="checkbox" value="Fahrrad fahren" />
+          <br />
+          <br />
+          <select>
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Mercedes</option></select>
+          <br />
+          <br />
+          <textarea cols="30" rows="10" maxlength="250" minlength="10" placeholder="250 Zeichen"></textarea>
+          <input type="submit" />
+        </fieldset>
+      </form>
+    </body>
+  </html>
 
-    </main>
-    <footer>
-        <p>&copy; 2024 Marc Ehrlich Techstarter</p>
-    </footer>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153684.3723004072!2d8.685346177059177!3d52.99666057840162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0d98c36375b53%3A0xb8c515b38caf1194!2s28844%20Weyhe!5e0!3m2!1sde!2sde!4v1714154229342!5m2!1sde!2sde"
+  width="600"
+  height="450"
+  style="border: 0"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+</iframe> 
+  
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/5abamRO41fE?si=FB1EFyGvLluxWm0f"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen
+></iframe>
+
+
+<footer>
+    <p>&copy; 2024 Marc Ehrlich Techstarter</p>
+</footer>
 </body>
 </html>
